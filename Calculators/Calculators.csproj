@@ -4,6 +4,11 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Ahmed Abdullai</Authors>
+    <PackageId>AhmedAbdullai.CSharp.Libraries.$(AssemblyName)</PackageId>
+    <Title>CSharp Libraries Calculators</Title>
+    <RepositoryUrl>https://github.com/ahmedabdullai/AhmedAbdullai.CSharp.Libraries</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
