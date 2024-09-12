@@ -36,4 +36,6 @@ jobs:
         run: dotnet nuget push "./output/*.nupkg" --api-key $NUGET_API_KEY --source https://api.nuget.org/v3/index.json
 
       - name: Push to GitHub Packages
-        run: dotnet nuget push "./output/*.nupkg" --api-key ${{ secrets.ACTIONS_TOKEN }} --source https://nuget.pkg.github.com/ahmedabdullai/index.json
+        env:
+          ACTIONS_TOKEN: ${{ secrets.ACTIONS_TOKEN }}
+        run: dotnet nuget push "./output/*.nupkg" --api-key $ACTIONS_TOKEN --source https://nuget.pkg.github.com/ahmedabdullai/index.json
